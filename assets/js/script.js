@@ -8,7 +8,12 @@ $(document).ready(function() {
     
     //save them to local storage
     localStorage.setItem(time,value)
+
     
+    function time() {
+        var currentTime = moment().format("MMM Do, YYYY hh:mm:ss A");
+    $("#time-display").text(currentTime);
+    }
     
     
     })
@@ -39,5 +44,6 @@ $(document).ready(function() {
 
 
 
-    
+
     // display current day on the top of the page using moment
+   
